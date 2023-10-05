@@ -37,25 +37,25 @@ public class StudentRepository {
         }
     }
 
-    public Student getStudentByName(String name) {
-        if (studentHashMap.containsKey(name)){
-            return studentHashMap.get(name);
-        }
-        return null;
+    public Student getStudentByName(String mname) {
+//        if (studentHashMap.containsKey(mname)){
+            return studentHashMap.get(mname);
+//        }
+//        return null;
     }
 
     public Teacher getTeacherByName(String name) {
-        if (teacherHashMap.containsKey(name)){
+//        if (teacherHashMap.containsKey(name)){
             return teacherHashMap.get(name);
-        }
-        return null;
+//        }
+//        return null;
     }
 
     public List<String> getStudentsByTeacherName(String teacher) {
-        if (teachedStudentMap.containsKey(teacher)){
+//        if (teachedStudentMap.containsKey(teacher)){
             return teachedStudentMap.get(teacher);
-        }
-        return null;
+//        }
+//        return null;
     }
 
     public List<String> getAllStudents() {
